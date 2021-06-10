@@ -4,7 +4,8 @@ import "./App.css";
 // import Basic1 from "./components/Basic1";
 // import Basic2 from "./components/Basic2";
 // import BasicUseEffect from "./components/BasicUseEffect";
-import TimerContainer from "./components/TimerContainer";
+// import TimerContainer from "./components/TimerContainer";
+import ApiFetch from "./components/ApiFetch";
 
 const App: React.FC = () => {
   return (
@@ -14,7 +15,8 @@ const App: React.FC = () => {
         {/* <Basic1 /> */}
         {/* <Basic2 /> */}
         {/* <BasicUseEffect /> */}
-        <TimerContainer />
+        {/* <TimerContainer /> */}
+        <ApiFetch />
       </header>
     </div>
   );
