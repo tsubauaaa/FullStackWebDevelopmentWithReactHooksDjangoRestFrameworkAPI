@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 interface Posts {
   id: string;
@@ -23,7 +23,7 @@ const ApiFetch: React.FC = () => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { method: "GET" })
       .then((res) => res.json())
       .then((data) => setPosts(data));
-  }, [clicked]);
+  }, [clicked, id]);
 
   return (
     <div>
