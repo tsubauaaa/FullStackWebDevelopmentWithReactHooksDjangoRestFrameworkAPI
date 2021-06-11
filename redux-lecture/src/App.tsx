@@ -18,6 +18,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <button onClick={() => dispatch({type: SELL_MEAT})} >Sell meat</button>
+        Today's Meat: {state.reducerMeat.numOfMeat}
+        <button onClick={() => dispatch({type: SELL_VEGETABLE})} >Sell vegetable</button>
+        Today's Vegetable: {state.reducerVegetable.numOfVegetable}
       </header>
     </div>
   );

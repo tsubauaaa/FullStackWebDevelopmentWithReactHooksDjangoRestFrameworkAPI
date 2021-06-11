@@ -1,14 +1,19 @@
 import { SELL_VEGETABLE } from "./actionTypes";
 
-export interface VegetableState {
+interface VegetableState {
   numOfVegetable: number;
 }
+
+const initialState: VegetableState = {
+  numOfVegetable: 0
+}
+
 
 interface VegetableAction {
   type: string;
 }
 
-const reducerVegetable = (state: VegetableState, action: VegetableAction) => {
+const reducerVegetable = (state: VegetableState=initialState, action: VegetableAction) => {
   switch (action.type) {
     case SELL_VEGETABLE:
       return {
